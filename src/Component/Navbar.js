@@ -31,10 +31,17 @@ ${NavLink}
 color:#fff;
 font-style:italic;
 `;  
-const MenuBars = styled.i``;
+const MenuBars = styled.i`
+display:none;
+`;
 const NavMenu = styled.div`
 display:flex;
 align-items:center;
+margin-right:-48px;
+@media screen and (max-width: 768px) {
+    display:none 
+}
+
  
 `;
 const NavMenuLinks = styled(Link)`
@@ -43,7 +50,10 @@ ${NavLink}
 const NavBtn = styled.div`
 display:flex;
 align-items:center;
-margin-right:24px
+margin-right:24px;
+@media screen and (max-width: 768px) {
+    display:none 
+}
 `;
 
 const Navbar = () => {
