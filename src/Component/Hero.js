@@ -1,6 +1,8 @@
 import React from 'react'
 import styled,{css} from 'styled-components/macro';
 import { Button } from './Button';
+import { IoMdArrowRoundForward } from 'react-icons/io'
+import { IoArrowForward,IoArrowBack} from 'react-icons/io5'
 
 const HeroSection = styled.section`
 height:100vh;
@@ -29,6 +31,7 @@ const Heroslider = styled.div``
 const HeroIMage = styled.img``
 
 const HeroContent = styled.div``
+const Arrow = styled(IoMdArrowRoundForward)``;
 
 const Hero = ({slides}) => {
   return (
@@ -46,8 +49,10 @@ const Hero = ({slides}) => {
                                       
                                       <h1>{slide.title}</h1>
                                       <p>{slide.price}</p> 
-                                      <Button to={slide.path} primary='true'>
+                                      <Button to={slide.path} primary='true' css = {`max-width:140px`}>
+                                          
                                           {slide.label}
+                                          <Arrow/>
                                       </Button>
                                   </HeroContent>
                                       
@@ -56,7 +61,9 @@ const Hero = ({slides}) => {
                               
                     </Heroslide >
                 )
-            }  )}
+                  })}
+                  
+                  
                   </HeroWrapper>
         </HeroSection>
     </div>
