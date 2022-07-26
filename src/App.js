@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Component/Navbar";
 function App() {
   return (
     <>
     
-    <h1>Findhome</h1>
+    <Navbar/>
     
     </>
   );
