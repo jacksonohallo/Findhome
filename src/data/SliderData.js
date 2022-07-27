@@ -1,4 +1,4 @@
-import imageOne from '../images/Image1.jpg';
+import imageOne from '../images/image1.jpg'
 import imageTwo from '../images/image2.jpg';
 import imageThree from '../images/image3.jpg';
 import imageFour from '../images/image4.jpg';
@@ -11,7 +11,7 @@ export const SliderData = [
         price: '$4,200,000',  
         path: '/home',
         label: 'view Home',
-        image: 'imageOne',
+        image: imageOne,
         alt : 'House'
 },   
 
@@ -20,17 +20,7 @@ export const SliderData = [
         price: '$4,200,000',  
         path: '/home',
         label: 'view Home',
-        image: 'imageTwo',
-        alt : 'House'
-},   
-
-
-   {
-        title: 'Luxury Villa in Bali, Runda',
-        price: '$4,200,000',  
-        path: '/home',
-        label: 'view Home',
-        image: 'imageThree',
+        image: imageTwo,
         alt : 'House'
 },   
 
@@ -40,7 +30,17 @@ export const SliderData = [
         price: '$4,200,000',  
         path: '/home',
         label: 'view Home',
-        image: 'imageFour',
+        image: imageThree,
+        alt : 'House'
+},   
+
+
+   {
+        title: 'Luxury Villa in Bali, Runda',
+        price: '$4,200,000',  
+        path: '/home',
+        label: 'view Home',
+        image: imageFour,
         alt : 'House'
 },   
 
