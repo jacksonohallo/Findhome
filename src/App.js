@@ -1,6 +1,7 @@
 
 import React from "react";
 import Hero from "./Component/Hero";
+import InfoSection from "./Component/InfoSection";
 import Navbar from "./Component/Navbar";
 import { SliderData } from "./data/SliderData";
 import GlobalStyle from "./globalStyle";
@@ -10,7 +11,8 @@ function App() {
     
     <GlobalStyle/>
       <Navbar />
-      <Hero slides={SliderData}/>
+      <Hero slides={SliderData} />
+      <InfoSection/>
     
     </>
   );
