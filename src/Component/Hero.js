@@ -1,5 +1,5 @@
-import React from 'react'
-import React,{useState,useRef} from 'react';
+
+import React, { useState, useRef } from 'react';
 import styled,{css} from 'styled-components/macro';
 import { Button } from './Button';
 import { IoMdArrowRoundForward } from 'react-icons/io';
@@ -92,7 +92,10 @@ h1{
 
 
 
-const Arrow = styled(IoMdArrowRoundForward)``;
+const Arrow = styled(IoMdArrowRoundForward)`
+margin-left:0.5rem;
+
+`;
 
 
 
@@ -132,7 +135,23 @@ ${arrowButtons}
 `; 
 
 
-const Hero = ({slides}) => {
+const Hero = ({ slides }) => {
+    
+    const[current, setCurrent] = useState(0)
+    const length = slides.length
+    const timeout = useRef(null)
+    
+    const nextSlide = () => {
+    
+    setCurrent(current===length-1?0:current+1)    
+}
+
+    
+    const prevSlide = () => {
+    setCurrent(current ===0? length-1: current-1)
+}    
+    
+    
   return (
       <div>
           <HeroSection>
@@ -140,7 +159,8 @@ const Hero = ({slides}) => {
                   {slides.map((slide, index) => {
                       return (
                           <Heroslide key={index}>
-                              <Heroslider>
+                              {index === current && (
+                                 <Heroslider>
                                   
                                   <HeroIMage src={slide.image} alt={slide.alt} />
                                   <HeroContent>
@@ -156,15 +176,18 @@ const Hero = ({slides}) => {
                                   </HeroContent>
                                       
                                   
-                              </Heroslider>
+                              </Heroslider> 
+
+                              )}
+                              
                               
                     </Heroslide >
                 )
                   })}
                   <SliderButtons>
-                      <PreArrow/>
+                      <PreArrow onClick={prevSlide}/>
                       
-                      <NextArrow/>
+                      <NextArrow onClick={nextSlide}/>
 
                       
                   </SliderButtons>
