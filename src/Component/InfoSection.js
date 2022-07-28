@@ -53,6 +53,18 @@ align-items: center;
 
 
 
+Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media screen and (max-width: 768px){
+    width: 90 %  
+    height: 90 %; };
+}
+
+
+
+
 `;
 
 
@@ -71,7 +83,9 @@ const InfoSection = ({heading,paragraphOne,paragraphTwo,buttonLabel,reverse,imag
                   <p>{paragraphOne}</p>
                   <p>{paragraphTwo}</p>
                   
-                  <Button to='/home'>{buttonLabel}</Button>
+                  <Button to='/home' primary='true'>
+                  {buttonLabel}
+                  </Button>
               </ColumnLeft>
               <ColumnRight reverse={reverse}>
                   <img src={image}   alt='home' />
