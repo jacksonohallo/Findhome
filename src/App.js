@@ -6,6 +6,8 @@ import Navbar from "./Component/Navbar";
 import { InfoData } from "./data/InfoData";
 import { SliderData } from "./data/SliderData";
 import GlobalStyle from "./globalStyle";
+import Footer from "./Component/Footer";
+import Property from "./Component/Properties";
 function App() {
   return (
     <>
@@ -13,8 +15,8 @@ function App() {
     <GlobalStyle/>
       <Navbar />
       <Hero slides={SliderData} />
-      <InfoSection{...InfoData}/>
-    
+      <InfoSection{...InfoData} />
+      <Footer/>
     </>
   );
 }
