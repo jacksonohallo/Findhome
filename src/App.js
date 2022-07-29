@@ -7,8 +7,8 @@ import { InfoData } from "./data/InfoData";
 import { SliderData } from "./data/SliderData";
 import GlobalStyle from "./globalStyle";
 import Footer from "./Component/Footer";
-import { AddUser } from "./Component/AddUser";
-import {EditUser}   from "./Component/EditUser"
+import AddUser  from "./Component/AddUser";
+import EditUser from "./Component/EditUser"
   
   
   
@@ -20,7 +20,10 @@ function App() {
       <Navbar />
       <Hero slides={SliderData} />
       <InfoSection{...InfoData} />
-      <Footer/>
+  
+      <AddUser />
+      <EditUser/>
+    <Footer/>
     </>
   );
 }
