@@ -7,7 +7,6 @@ import { InfoData } from "./data/InfoData";
 import { SliderData } from "./data/SliderData";
 import GlobalStyle from "./globalStyle";
 import Footer from "./Component/Footer";
-import Property from "./Component/Properties";
 function App() {
   return (
     <>
