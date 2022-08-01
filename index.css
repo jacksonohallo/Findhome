@@ -1,0 +1,573 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2 auto;
+  background-color: #c3def0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+/* styling the navbar */
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  font-size: 0;
+  vertical-align: middle;
+  height: 6.6rem;
+  line-height: 6.6rem;
+  padding-left: 1.2rem;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(5, 8, 8, 0.6);
+}
+
+nav .nav-common {
+  display: inline-block;
+}
+
+nav .logo {
+  width: 20%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#logo {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+span {
+  color: #cf5898;
+  font-weight: 900;
+}
+
+nav ul {
+  width: 65%;
+  list-style: none;
+  /*  font-size: 0;*/
+  font-size: 16px;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 18%;
+  text-align: center;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #cf5898;
+}
+
+nav .nav-icon {
+  width: 15.5%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    height: 5rem;
+    line-height: 5rem;
+  }
+  header nav .logo {
+    width: 45%;
+  }
+  header nav .nav-icon img {
+    margin-top: 1.4rem;
+  }
+  header nav ul {
+    width: 20%;
+    display: none;
+  }
+  header nav ul li {
+    display: none;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 8px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  header nav .cart {
+    width: 10%;
+    text-align: right;
+  }
+  header nav .menu {
+    width: 10%;
+  }
+
+  #header {
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium";
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .items textarea{
+    width: 100px;
+    height: auto;
+  }
+
+  #myorders{
+    font-size: 10px;
+    padding-top: 60px;
+  }
+}
+
+#products {
+  width: 100%;
+  display: flex;
+}
+
+/* styling the product cards */
+#products .container {
+  display: block;
+  width: 76%;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+#products .container .products-header {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#products .container .products-header h2 {
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium";
+  color: #000000;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+}
+
+#products .container .products-header p {
+  font-family: Cambria;
+  color: rgba(89, 89, 89, 1);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#products .container .product {
+  width: 24%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.8rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #b7b7b7;
+  margin: 1px;
+}
+
+#products .container .product:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.8;
+  -webkit-transition: opacity 800ms ease-in-out 0s;
+  transition: opacity 800ms ease-in-out 0s;
+  -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+  transition: -webkit-transform 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+}
+
+#products .container .product figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* styling the featured brands */
+#collections {
+  width: 90%;
+  display: block;
+  margin-top: 6rem;
+  margin-left: 20px;
+}
+
+#collections .container {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#collections .container .c-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 3rem 0rem 0rem 1rem;
+}
+
+#collections .container .c-1 .c-1-image-holder {
+  width: 100%;
+  height: auto;
+}
+
+#collections .container .c-1 .c-1-image-holder img {
+  width: 100%;
+  height: auto;
+}
+
+#collections .container .c-2 .c-2-image-holder {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+#collections .container .c-2 .c-2-image-holder img {
+  width: 100%;
+  height: auto;
+}
+
+#collections .container .c-2 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1rem;
+}
+
+#collections .container .c-2 h2 {
+  padding: 1rem 0rem;
+  text-align: right;
+  font-family: "Franklin Gothic Medium";
+  font-size: 1.8rem;
+  letter-spacing: 0.094rem;
+  text-transform: uppercase;
+}
+
+#collections .container .c-2 hr {
+  width: 30%;
+  margin-left: 70%;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 0.3rem solid #a61458;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+#collections .container .c-2 .button {
+  border-color: #a61458;
+  border-style: double;
+  box-shadow: 3px 6px 7px grey;
+  width: 45%;
+  margin-left: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.8rem 0.2rem;
+  color: #a61458;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  background-color: #fdb155;
+}
+
+#collections .container .c-2 .left {
+  position: relative;
+  right: -6rem;
+  box-shadow: 3px 5px 8px grey;
+}
+
+#collections .container .c-2 .right {
+  position: relative;
+  top: -2rem;
+  right: 2rem;
+  box-shadow: 3px 5px 8px grey;
+}
+
+.button {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fdb155;
+}
+
+#my-orders {
+  background-color: #c3def0;
+  padding: 20px 20px;
+}
+
+#time {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fdb155;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 8px;
+  border-radius: 30px;
+}
+
+#orders hr {
+  margin-bottom: 10px;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#my-orders {
+  text-align: center;
+}
+
+.items {
+  border: #000000;
+  background-color: #a61458;
+  box-shadow: 5px 5px 5px grey;
+  width: 22%;
+  font-size: 1.8rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 30px;
+  border-radius: 0px 25px 0px 25px;
+  margin-bottom: 20px;
+}
+
+.items input {
+  width: 80%;
+  margin-left: 22px;
+}
+
+.items label {
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.items textarea {
+  margin-left: 21px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* fetched products section design */
+#container-products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 12%;
+}
+
+#img-product {
+  width: 100%;
+  height: auto;
+}
+.each-product {
+  width: 20%;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.8rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #fdb155;
+  margin: 6px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.each-product:hover {
+  background: #c3def0;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+
+.each-product button {
+  margin-top: 1rem;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  background-color: #c3def0;
+  position: relative;
+}
+
+.products-header {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.products-header h2 {
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium";
+  color: #000000;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+}
+
+.products-header hr {
+  background-color: #cf5898;
+  padding: 2px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.products-header p {
+  font-family: Cambria;
+  color: rgba(89, 89, 89, 1);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.orderform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.orderform input {
+  width: 40%;
+  padding-top: 10px;
+  border-color: #fdb155;
+  border-radius: 5px;
+  border-style: double;
+  border-width: 6px;
+}
+
+#form-header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium";
+}
+
+#form-container {
+  background-color: #b7b7b7;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#form-container button {
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #cf5898;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #000000;
+  box-shadow: 5px 8px 5px grey;
+}
+#form-container button:hover {
+  color: #000000;
+}
+
+#about {
+  background-image: url(https://dxlm84u5gf2hs.cloudfront.net/wp-content/uploads/2018/05/Fotolia_188160876_S.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 71vh;
+  margin: 1px;
+}
+
+#about h1 {
+  color: #000000;
+  text-align: center;
+  padding-top: 20px;
+  font-style: italic;
+  margin-left: 700px;
+}
+
+#about p {
+  float: right;
+  padding-top: 20px;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.our-mission {
+  width: 100%;
+}
+
+#about h3 {
+  float: right;
+  width: 80%;
+}
+
+.about-left {
+  margin-top: 110px;
+  margin-left: 150px;
+  margin-right: 800px;
+  background-color: #b7b7b7;
+  padding: 10px;
+  border-radius: 0px 40px 0px 40px;
+}
+
+.about-left ul li img {
+  width: 30px;
+  height: auto;
+  margin-right: 6px;
+  margin-top: 3px;
+}
+
+.about-left ul li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.about-left h2 {
+  padding-left: 20px;
+}
+
+#about-container {
+  background-color: #c3def0;
+}
