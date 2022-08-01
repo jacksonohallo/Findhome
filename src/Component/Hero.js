@@ -1,4 +1,3 @@
-
 import React, { useState, useRef,useEffect } from 'react';
 import styled,{css} from 'styled-components/macro';
 import { Button } from './Button';

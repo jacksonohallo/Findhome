@@ -9,8 +9,8 @@ width:100%;
 height:100%;
 padding: 4 rem 0rem;
 
-
 `;
+
 const Container = styled.div`
 padding: 3 rem calc ((100vw-1300px)/2);
 display: grid;
@@ -20,11 +20,8 @@ grid- template-row: 1fr;
 @media screen and (max-width: 768px){
     grid-template-columns: 1fr;
 }
-
-
-
-
 `;
+
 const ColumnLeft = styled.div`
 display:flex;
 flex-direction: column;
@@ -38,9 +35,9 @@ order: ${({ reverse }) => (reverse ? '2' : '1')};
 h1{
     margin-bottom: 1rem;
     font-size: clamp(1.5rem,6vw,2rem)
-}
+}`;
 
-`;
+
 const ColumnRight = styled.div`
 padding : 1rem 2rem;
 order: ${({ reverse }) => (reverse ? '1' : '2')};
@@ -60,12 +57,7 @@ Img {
     @media screen and (max-width: 768px){
     width: 90 %  
     height: 90 %; };
-}
-
-
-
-
-`;
+}`;
 
 
 
