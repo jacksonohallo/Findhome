@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+
+import { BrowserRouter as Router} from 'react-router-dom';
  
 
 

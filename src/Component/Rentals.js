@@ -6,7 +6,7 @@ function Rentals({ name,price,image,description,category,code }) {
       <div className='each-product'>
          <p>
           
-          <img id="img-product" src={image} />
+          <img id="img-product" src={image} alt="" />
           <span>{name}</span>{" "}
         </p>
         <p>
