@@ -19,7 +19,8 @@ const RentalList = ({ rentals }) => {
         <div>
             <h1>Rental List</h1>
             <div style={{ display: "flex", flexWrap: "wrap" }}>{rentalsData}</div>
-            <Link to="/booking">   <button>Click To Book</button></Link>
+
+            
          
         </div>
     )

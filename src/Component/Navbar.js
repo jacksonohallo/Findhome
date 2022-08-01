@@ -1,32 +1,39 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import "./assets/main.css"
 
 function Navbar() {
 
   return (
-      <div>
+      <div className="logo nav-common">
       
-      <nav>
+          <nav id="nav ">
+              <ul className="nav-common">
+                  <li>
               <NavLink to="/">
                   Home
-              </NavLink>
+                      </NavLink>
+                  </li>
+                
+                  <li>
+                    
               <NavLink to="/rentals">
                   Rentals
-              </NavLink>
+                      </NavLink>
+                  </li>
+                  <li>
               <NavLink to="/bookings">
                   Bookings
-              </NavLink>
+                      </NavLink>
+                  </li>
+            
+                  </ul>
           </nav>
           </div>
   )
 }
 
 export default Navbar
-
- 
- 
-
-
 
  

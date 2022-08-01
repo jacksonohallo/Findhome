@@ -33,8 +33,14 @@ function BookingForm({ onBook }) {
       .then((newBook) => onBook(newBook));
   }
 
+  
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
+      <div id="form-header">
+        ENSURE YOU ENTER CORRECT CREDENTIAL WHILE BOOKING
+      </div>
+      <div id="form-container">
+         <form className="orderform" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="name"
@@ -66,7 +72,9 @@ function BookingForm({ onBook }) {
       
       />
       <input type="submit" value="Book Now" />
-    </form>
+      </form>
+      </div>
+      </div>
   );
 }
 

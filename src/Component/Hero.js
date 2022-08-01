@@ -222,3 +222,4 @@ const Hero = ({ slides }) => {
 } 
 
 export default Hero;
+

@@ -1,26 +1,30 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Booking from "./Booking";
 
-function Navbar() {
+const BookList = ({ bookList }) => {
+  
 
+  const myBookings = bookList.map((booking) => {
+    return (
+      <Booking
+        key={booking.id}
+        name={booking.name}
+        category={booking.category}
+        price={booking.price}
+        code={booking.code}
+      />
+    );
+  });
   return (
-      <div>
-      
-      <nav>
-              <NavLink to="/">
-                  Home
-              </NavLink>
-              <NavLink to="/rentals">
-                  Rentals
-              </NavLink>
-              <NavLink to="/bookings">
-                  Bookings
-              </NavLink>
-          </nav>
-          </div>
-  )
+    <div>
+        <h1> My Bookings </h1> <hr/>
+        <div > {myBookings} </div>
+        </div >
+    );
 }
 
-export default Navbar
+
+export default BookList;
+
 
  
