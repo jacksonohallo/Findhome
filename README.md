@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Findhome
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Findhome is a web application to design to easen to the search for rental properties.
 
-## Available Scripts
+## Top Page Screenshot
 
-In the project directory, you can run:
+![image](./src/images/top.png)
 
-### `npm start`
+# Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project uses the HTML ,CSS and JavaScript,REACT.JS languages to program this site and JSON for hosting a local public API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project-Setup-Instructions
 
-### `npm test`
+1)Installation of the Visual studio code .
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2)Git cloning the repository . 
 
-### `npm run build`
+3)install the app dependancies by running npm install. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4)After the node-modules packages and other dependancies have been installed run npm start or npm run start to run the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Technology-Used
+HTML - Was used as a template to hold the React components of the app via the root div. CSS styling-which was used to style the User Interface. JS - JavaScript is used to make the website interactive. JSX- JavaScript XML allows us to write HTML elements in JavaScript and place them in the DOM .JSX converts HTML tags into react elements. JSON-Was used to create a public API server which was hosted on Heroku. Netlify- Netlify was used to deploy the project's live link. Heroku - Heroku used to create a Json-server API that's hosted online .
 
-### `npm run eject`
+# Known-Bugs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project works correctly.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Want to contribute? Excellent!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To enhance or contribute on the existing project, follow these steps:
 
-## Learn More
+Fork the repo
+Create a new branch (git checkout -b enhance-feature)
+Make the appropriate changes in the files
+Add changes to reflect the changes made
+Commit your changes (git commit -m 'enhanced feature')
+Push to the branch (git push origin enhance-feature)
+Create a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Project's-Netlify-Live-Link
+https://vocal-piroshki-f1a24f.netlify.app/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#Back-End-Links
+HOME API:https://jack132.herokuapp.com/homes
+BOOKING API:https://jack132.herokuapp.com/booking
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Copyright (c) [2022][jackson otieno] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Advanced Configuration
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Deployment
+# Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+By Jackson otieno.
 
-### `npm run build` fails to minify
+# Support-And-Contact-Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email address: jacksonohallo@gmail.com
+Slack:jackson otieno
