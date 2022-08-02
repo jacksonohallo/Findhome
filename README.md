@@ -1,6 +1,6 @@
 # Findhome
 
-Findhome is a web application to design to easen to the search for rental properties.
+Findhome is a web application  design to easen to the search for rental properties.
 
 ## Top Page Screenshot
 
