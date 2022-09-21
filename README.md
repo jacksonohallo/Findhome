@@ -68,4 +68,4 @@ By Jackson otieno.
 # Support-And-Contact-Details
 
 Email address: jacksonohallo@gmail.com
-Slack:jackson otieno
+Slack:jackson ohallo
