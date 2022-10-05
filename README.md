@@ -10,7 +10,8 @@ Findhome is a web application  design to easen to the search for rental properti
 
 The project uses the HTML ,CSS and JavaScript,REACT.JS languages to program this site and JSON for hosting a local public API.
 
-# Project-Setup-Instructions
+
+# Project-Setup-Instructions/contributions
 
 1)Installation of the Visual studio code .
 
@@ -19,7 +20,6 @@ The project uses the HTML ,CSS and JavaScript,REACT.JS languages to program this
 3)install the app dependancies by running npm install/yarn install
 
 4)After the node-modules packages and other dependancies have been installed run npm start or npm run start to run the app/ yarn start
-
 
 # Technology-Used
 HTML - Was used as a template to hold the React components of the app via the root div. CSS styling-which was used to style the User Interface. JS - JavaScript is used to make the website interactive. JSX- JavaScript XML allows us to write HTML elements in JavaScript and place them in the DOM .JSX converts HTML tags into react elements. JSON-Was used to create a public API server which was hosted on Heroku. Netlify- Netlify was used to deploy the project's live link. Heroku - Heroku used to create a Json-server API that's hosted online .
