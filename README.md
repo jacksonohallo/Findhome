@@ -13,16 +13,16 @@ The project uses the HTML ,CSS and JavaScript,REACT.JS languages to program this
 
 # Project-Setup-Instructions/contributions
 
-1)Installation of the Visual studio code .
+1)Installation of the Visual studio code 
 
-2)Git cloning the repository . 
+2)Git cloning the repository 
 
 3)install the app dependancies by running npm install/yarn install
 
 4)After the node-modules packages and other dependancies have been installed run npm start or npm run start to run the app/ yarn start
 
 # Technology-Used
-HTML - Was used as a template to hold the React components of the app via the root div. CSS styling-which was used to style the User Interface. JS - JavaScript is used to make the website interactive. JSX- JavaScript XML allows us to write HTML elements in JavaScript and place them in the DOM .JSX converts HTML tags into react elements. JSON-Was used to create a public API server which was hosted on Heroku. Netlify- Netlify was used to deploy the project's live link. Heroku - Heroku used to create a Json-server API that's hosted online .
+HTML - Was used as a template to hold the React components of the app via the root div. CSS styling-which was used to style the User Interface. JS - JavaScript is used to make the website interactive. JSX- JavaScript XML allows us to write HTML elements in JavaScript and place them in the DOM .JSX converts HTML tags into react elements. JSON-Was used to create a public API server which was hosted on Heroku. Netlify- Netlify was used to deploy the project's live link. Heroku - Heroku used to create a Json-server API that's hosted online 
 
 # Known-Bugs
 
